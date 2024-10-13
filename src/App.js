@@ -7,6 +7,7 @@ import DataToTable from "./components/DataToTable";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import TodoList from "./components/TodoList";
 
 function App() {
   let data = [
@@ -25,6 +26,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/todo-list" element={<TodoList />} />
         <Route path="/about" element={<About />} />
         <Route path="/data-to-table" element={<DataToTable />} />
         <Route path="/bullet-list" element={<BulletList data={data} />} />
