@@ -8,6 +8,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import TodoList from "./components/TodoList";
+import Pagination from "./components/Pagination";
 
 function App() {
   let data = [
@@ -26,6 +27,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/pagination" element={<Pagination />} />
         <Route path="/todo-list" element={<TodoList />} />
         <Route path="/about" element={<About />} />
         <Route path="/data-to-table" element={<DataToTable />} />
