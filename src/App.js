@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import TodoList from "./components/TodoList";
 import Pagination from "./components/Pagination";
+import Search from "./components/Search";
 
 function App() {
   let data = [
@@ -27,6 +28,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/pagination" element={<Pagination />} />
         <Route path="/todo-list" element={<TodoList />} />
         <Route path="/about" element={<About />} />
