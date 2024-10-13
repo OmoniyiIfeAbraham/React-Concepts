@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import BulletList from "./components/BulletList";
+import SubmitName from "./components/SubmitName";
+import Counter from "./components/Counter";
+import DataToTable from "./components/DataToTable";
 
 function App() {
+  let data = [
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten",
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <BulletList data={data} /> */}
+      {/* <SubmitName /> */}
+      {/* <Counter /> */}
+      <DataToTable />
     </div>
   );
 }
