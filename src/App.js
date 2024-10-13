@@ -4,6 +4,9 @@ import BulletList from "./components/BulletList";
 import SubmitName from "./components/SubmitName";
 import Counter from "./components/Counter";
 import DataToTable from "./components/DataToTable";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   let data = [
@@ -19,12 +22,16 @@ function App() {
     "ten",
   ];
   return (
-    <div>
-      {/* <BulletList data={data} /> */}
-      {/* <SubmitName /> */}
-      {/* <Counter /> */}
-      <DataToTable />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/data-to-table" element={<DataToTable />} />
+        <Route path="/bullet-list" element={<BulletList data={data} />} />
+        <Route path="/submit-name" element={<SubmitName />} />
+        <Route path="/counter" element={<Counter />} />
+      </Routes>
+    </Router>
   );
 }
 

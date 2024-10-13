@@ -38,7 +38,7 @@ const DataToTable = () => {
           <th>Category</th>
           <th>Employment Type</th>
           <th>Fees</th>
-          <th>Level</th>
+          <th>Level</th>    
           <th>Title</th>
         </tr>
         {data.map((i, index) => (
