@@ -10,6 +10,7 @@ import About from "./pages/About";
 import TodoList from "./components/TodoList";
 import Pagination from "./components/Pagination";
 import Search from "./components/Search";
+import TableComponent from "./components/TableComponent";
 
 function App() {
   let data = [
@@ -24,10 +25,26 @@ function App() {
     "nine",
     "ten",
   ];
+
+  const Columns = [
+    { Header: "Name", Key: "name" },
+    { Header: "Age", Key: "age" },
+    { Header: "Gender", Key: "gender" },
+  ];
+
+  const Data = [
+    { name: "John", age: 25, gender: "male" },
+    { name: "Mary", age: 18, gender: "female" },
+    { name: "Doe", age: 21, gender: "male" },
+  ];
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route
+          path="/table"
+          element={<TableComponent Columns={Columns} Data={Data} />}
+        />
         <Route path="/search" element={<Search />} />
         <Route path="/pagination" element={<Pagination />} />
         <Route path="/todo-list" element={<TodoList />} />
