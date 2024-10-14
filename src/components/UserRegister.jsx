@@ -22,10 +22,12 @@ const UserRegister = () => {
         <br />
         <input type="password" name="password" value={userData.password} onChange={handleChange} placeholder='Password' />
         <br />
-        <input type="radio" name="gender" value="Male" onChange={handleChange} /> Male
-        <input type="radio" name="gender" value="Female" onChange={handleChange} /> Female
+        <input type="radio" name="gender" value="Male" onChange={handleChange} />
+        <label htmlFor="gender">Male</label>
+        <input type="radio" name="gender" value="Female" onChange={handleChange} />
+        <label htmlFor="gender">Female</label>
         <br />
-        <p>By clicking Register you agree to our <a href="">terms and conditions</a></p>
+        <p>By clicking Register you agree to our <a href="#">terms and conditions</a></p>
         <button type='submit'>Register</button>
       </form>
     </div>
