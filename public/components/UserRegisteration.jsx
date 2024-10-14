@@ -15,6 +15,7 @@ const UserRegisteration = () => {
   }
   return (
     <div>
+      <h1>Registration</h1>
       <form action="" onSubmit={handleSubmit}>
         <input type="email" name="email" id="" value={userData.email} onChange={handleChange} placeholder='Email' />
         <br />
@@ -22,10 +23,13 @@ const UserRegisteration = () => {
         <br />
         <input type="password" name="password" id="" value={userData.email} onChange={handleChange} placeholder='Password' />
         <br />
-        <input type="radio" name="gender" id="" />
+        <input type="radio" name="gender" id="" value={userData.gender} onSelect={handleChange} />
         <label htmlFor="gender">Male</label>
-        <input type="radio" name="gender" id="" />
+        <input type="radio" name="gender" id="" value={userData.gender} onSelect={handleChange} />
         <label htmlFor="gender">Female</label>
+        <br />
+        <p>By clicking Register you agree to our <a href="">terms and conditions</a></p>
+        <button type='button'>Register</button>
       </form>
     </div>
   )
