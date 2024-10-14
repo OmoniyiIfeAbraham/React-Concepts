@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonComponent from "./ButtonComponent";
 
 const TableComponent = ({ Columns, Data }) => {
   return (
@@ -43,6 +44,12 @@ const TableComponent = ({ Columns, Data }) => {
           ))}
         </tbody>
       </table>
+
+      <ButtonComponent
+        title={"Button Component"}
+        action={() => alert("This is a reusable button")}
+        style={{ backgroundColor: "blue", color: "white" }}
+      />
     </div>
   );
 };
