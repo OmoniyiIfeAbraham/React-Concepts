@@ -18,7 +18,6 @@ const UserRegister = () => {
       <h1>Registration</h1>
       <form action="" onSubmit={handleSubmit}>
         <input type="email" name="email" value={userData.email} onChange={handleChange} placeholder='Email' />
-        <br />
         <input type="text" name="name" value={userData.name} onChange={handleChange} placeholder='Name' />
         <br />
         <input type="password" name="password" value={userData.password} onChange={handleChange} placeholder='Password' />

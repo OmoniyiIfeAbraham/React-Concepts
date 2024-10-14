@@ -1,0 +1,61 @@
+/* Styling for the card */
+.card {
+  width: 400px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form elements */
+.card input[type="email"],
+.card input[type="text"],
+.card input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.card input[type="radio"] {
+  margin-right: 5px;
+}
+
+.card label {
+  margin-right: 15px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin: 15px 0;
+}
