@@ -10,7 +10,7 @@ const UserRegister = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log(userData)
+    console.log('UserData: ', userData)
   }
 
   return (
