@@ -1,10 +1,19 @@
-import UserRegister from "./components/UserRegister";
-import FormWithModal from "./Umar/FormWithModal";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { UserProvider } from "./Umar/UserContext";
+import Home from "./Umar/Home";
+import UserDetails from "./Umar/UserDetails";
 
 function App() {
   return (
-    // <UserRegister />
-    <FormWithModal />
+    <UserProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/user-details" element={<UserDetails />} />
+        </Routes>
+      </Router>
+    </UserProvider>
   );
 }
 
